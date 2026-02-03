@@ -1,0 +1,79 @@
+
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient to right, #6a11cb, #2575fc); /* Modern gradient background */
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Softer, larger shadow */
+    width: 350px;
+    max-width: 90%; /* Responsive width */
+    text-align: center;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.login-container h2 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2em; /* Larger heading */
+    font-weight: 600;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+    font-size: 0.95em;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus */
+}
+
+.input-group input:focus {
+    border-color: #2575fc; /* Highlight border on focus */
+    box-shadow: 0 0 8px rgba(37, 117, 252, 0.2); /* Subtle glow on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    background: linear-gradient(to right, #2575fc, #6a11cb); /* Gradient button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    width: 100%;
+    transition: all 0.3s ease; /* Smooth transition for hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Reverse gradient on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Lift effect on hover */
+    transform: translateY(-2px); /* Slight lift */
+}
